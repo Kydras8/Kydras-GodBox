@@ -1,0 +1,23 @@
+=== CLI install run: 11/21/2025 06:44:48 ===
+[MISS] winget not available.
+[STEP] Installing Windows CLI Tools
+[SKIP] winget missing – cannot install Git.Git
+[SKIP] winget missing – cannot install GitHub.cli
+[SKIP] winget missing – cannot install Microsoft.OpenSSH.Beta
+[SKIP] winget missing – cannot install GnuWin32.Wget
+[SKIP] winget missing – cannot install 7zip.7zip
+[SKIP] winget missing – cannot install Python.Python.3.12
+[SKIP] winget missing – cannot install sharkdp.fd
+[SKIP] winget missing – cannot install sharkdp.bat
+[SKIP] winget missing – cannot install junegunn.fzf
+[SKIP] winget missing – cannot install eza-community.eza
+[SKIP] winget missing – cannot install dufs.dufs
+[SKIP] winget missing – cannot install jqlang.jq
+[STEP] Python detected – installing pipx + poetry
+'poetry' already seems to be installed. Not modifying existing installation in
+'C:\Users\kyler\pipx\venvs\poetry'. Pass '--force' to force installation.
+'yq' already seems to be installed. Not modifying existing installation in
+'C:\Users\kyler\pipx\venvs\yq'. Pass '--force' to force installation.
+[ERROR] zoxide install failed: Response status code does not indicate success: 404 (Not Found).
+[ENV] K:\Kydras\SDKs already in PATH
+=== CLI Stack Install Complete ===

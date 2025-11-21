@@ -1,0 +1,4 @@
+=== DevStack run: 11/21/2025 04:32:23 ===
+[OK] Running as Administrator.
+[WARN] winget not found in PATH.
+[WARN] APPLY requested but winget is missing. Exiting before install.

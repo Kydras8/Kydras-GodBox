@@ -1,0 +1,16 @@
+=== Rg/Jq portable install run: 11/21/2025 09:48:19 ===
+[PATH] SdkRoot: K:\Kydras\SDKs
+[PATH] BinDir : K:\Kydras\SDKs\bin
+[STEP] Installing ripgrep (rg) portable
+[Rg] URL   : https://github.com/BurntSushi/ripgrep/releases/download/14.1.0/ripgrep-14.1.0-x86_64-pc-windows-msvc.zip
+[DL] Downloading: https://github.com/BurntSushi/ripgrep/releases/download/14.1.0/ripgrep-14.1.0-x86_64-pc-windows-msvc.zip
+[DL] Saved to: K:\Kydras\SDKs\bin\ripgrep.zip
+[Rg] Extracted ripgrep archive.
+[Rg] Deployed rg.exe to K:\Kydras\SDKs\bin\rg.exe
+[STEP] Installing jq portable
+[jq] URL   : https://github.com/jqlang/jq/releases/download/jq-1.7.1/jq-win64.exe
+[DL] Downloading: https://github.com/jqlang/jq/releases/download/jq-1.7.1/jq-win64.exe
+[DL] Saved to: K:\Kydras\SDKs\bin\jq.exe
+[jq] Deployed jq.exe to K:\Kydras\SDKs\bin\jq.exe
+[ENV] BinDir already present in user PATH.
+=== Rg/Jq portable install completed successfully ===

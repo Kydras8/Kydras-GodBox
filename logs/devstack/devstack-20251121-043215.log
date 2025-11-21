@@ -1,0 +1,24 @@
+=== DevStack run: 11/21/2025 04:32:15 ===
+[OK] Running as Administrator.
+[WARN] winget not found in PATH.
+[HAVE] Git (git)
+       Path   : K:\Program Files\Git\cmd\git.exe
+       Version: git version 2.52.0.windows.1
+
+[HAVE] GitHub CLI (gh)
+       Path   : C:\Program Files\GitHub CLI\gh.exe
+       Version: gh version 2.81.0 (2025-10-01)
+
+[HAVE] Python 3 (python)
+       Path   : C:\Users\kyler\AppData\Local\Programs\Python\Python312\python.exe
+       Version: Python 3.12.10
+
+[HAVE] Node.js LTS (node)
+       Path   : K:\Kydras\SDKs\Node\nodejs\node.exe
+       Version: v20.18.0
+
+[HAVE] Visual Studio Code (code)
+       Path   : C:\Users\kyler\AppData\Local\Programs\Microsoft VS Code\bin\code.cmd
+       Version: 1.106.1
+
+=== SCAN-ONLY COMPLETE ===

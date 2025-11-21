@@ -1,0 +1,9 @@
+{
+  "editor.fontFamily": "JetBrainsMono Nerd Font, Consolas, 'Courier New', monospace",
+  "files.exclude": {
+    "dist": true,
+    "build": true,
+    ".vs": true
+  },
+  "workbench.colorTheme": "Default Dark+"
+}

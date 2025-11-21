@@ -1,0 +1,13 @@
+{
+  "name": "Kydras - other",
+  "image": "mcr.microsoft.com/devcontainers/base:windows",
+  "features": {},
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.powershell",
+        "eamodio.gitlens"
+      ]
+    }
+  }
+}

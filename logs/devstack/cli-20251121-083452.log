@@ -1,0 +1,34 @@
+=== CLI install run: 11/21/2025 08:34:52 ===
+[WARN] Not running as Administrator – installs may fail.
+[MISS] winget is missing — winget-based installs will be skipped.
+[STEP] Installing CLI tools via winget (if available)
+[SKIP] winget missing — cannot install Git.Git
+[SKIP] winget missing — cannot install GitHub.cli
+[SKIP] winget missing — cannot install Microsoft.OpenSSH.Beta
+[SKIP] winget missing — cannot install 7zip.7zip
+[SKIP] winget missing — cannot install Python.Python.3.12
+[SKIP] winget missing — cannot install BurntSushi.ripgrep.MSVC
+[SKIP] winget missing — cannot install junegunn.fzf
+[SKIP] winget missing — cannot install sharkdp.bat
+[SKIP] winget missing — cannot install sharkdp.fd
+[SKIP] winget missing — cannot install eza-community.eza
+[SKIP] winget missing — cannot install jqlang.jq
+[STEP] Python found – installing pipx, poetry, yq
+Requirement already satisfied: pip in c:\users\kyler\appdata\local\programs\python\python312\lib\site-packages (25.3)
+Requirement already satisfied: pipx in c:\users\kyler\appdata\local\programs\python\python312\lib\site-packages (1.8.0)
+Requirement already satisfied: argcomplete>=1.9.4 in c:\users\kyler\appdata\local\programs\python\python312\lib\site-packages (from pipx) (3.6.3)
+Requirement already satisfied: colorama>=0.4.4 in c:\users\kyler\appdata\local\programs\python\python312\lib\site-packages (from pipx) (0.4.6)
+Requirement already satisfied: packaging>=20 in c:\users\kyler\appdata\local\programs\python\python312\lib\site-packages (from pipx) (25.0)
+Requirement already satisfied: platformdirs>=2.1 in c:\users\kyler\appdata\local\programs\python\python312\lib\site-packages (from pipx) (4.5.0)
+Requirement already satisfied: userpath!=1.9,>=1.6 in c:\users\kyler\appdata\local\programs\python\python312\lib\site-packages (from pipx) (1.9.2)
+Requirement already satisfied: click in c:\users\kyler\appdata\local\programs\python\python312\lib\site-packages (from userpath!=1.9,>=1.6->pipx) (8.3.1)
+C:\Users\kyler\.local\bin is already in PATH.
+
+'poetry' already seems to be installed. Not modifying existing installation in
+'C:\Users\kyler\pipx\venvs\poetry'. Pass '--force' to force installation.
+'yq' already seems to be installed. Not modifying existing installation in
+'C:\Users\kyler\pipx\venvs\yq'. Pass '--force' to force installation.
+[STEP] Downloading zoxide portable
+[ERROR] zoxide install failed: Response status code does not indicate success: 404 (Not Found).
+[ENV] K:\Kydras\SDKs already in PATH
+=== CLI Stack Install Complete ===

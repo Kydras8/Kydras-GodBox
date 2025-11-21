@@ -1,0 +1,35 @@
+=== DevEnv run: 11/21/2025 04:52:51 ===
+[OK] Running as Administrator.
+[HAVE] git
+       Path   : K:\Program Files\Git\cmd\git.exe
+       Version: git version 2.52.0.windows.1
+[HAVE] npm
+       Path   : K:\Kydras\SDKs\Node\nodejs\npm.cmd
+       Version: 10.8.2
+[HAVE] python
+       Path   : C:\Users\kyler\AppData\Local\Programs\Python\Python312\python.exe
+       Version: Python 3.12.10
+[HAVE] code
+       Path   : C:\Users\kyler\AppData\Local\Programs\Microsoft VS Code\bin\code.cmd
+       Version: 1.106.1
+
+[Git] Configuring global Git defaults (safe, idempotent).
+[Git] Keeping existing 'user.name' => 'Kydras8'
+[Git] Keeping existing 'user.email' => 'ci@kydras.com'
+[Git] Keeping existing 'init.defaultBranch' => 'main'
+[Git] Keeping existing 'core.autocrlf' => 'input'
+[Git] Keeping existing 'pull.rebase' => 'false'
+[Git] Setting 'push.default' => 'simple'
+[Git] Keeping existing credential.helper => manager
+
+[npm] Ensuring npm prefix & cache on K:
+[npm] Current prefix: K:\Kydras\SDKs\Node\npm-global
+[npm] Current cache : K:\Kydras\SDKs\Node\npm-cache
+[npm] Prefix already set to desired value.
+[npm] Cache already set to desired value.
+
+[Python] Ensuring PIP_CACHE_DIR points to K:
+[Env] Setting user env 'PIP_CACHE_DIR' => 'K:\Kydras\SDKs\Python\pip-cache' (was: 'K:\Kydras\SDKs\Python\pipcache')
+
+[Env] Adding K:\Kydras\bin to user PATH.
+=== DevEnv configuration complete ===

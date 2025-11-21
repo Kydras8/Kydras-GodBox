@@ -1,0 +1,3 @@
+=== DevStack run: 11/20/2025 23:49:43 ===
+[WARN] This script is not running as Administrator.
+       Scans are fine; installs (winget) may fail.

@@ -1,15 +1,17 @@
 #!/usr/bin/env pwsh
 <#
 .SYNOPSIS
-  Phase 1: Skeleton for creating 3 fully elevated terminals.
+  Enable "True Admin" experience for Kydras-GodBox.
 
 .DESCRIPTION
-  Right now this script just:
-  - Verifies Admin
-  - Logs what it would do
-  Later, we will:
-  - Create Windows Terminal profiles
-  - Create desktop shortcuts for 3x full-admin shells
+  - Backs up existing Windows Terminal settings.json
+  - Injects GodBox admin + WSL profiles
+  - Creates Desktop shortcuts to launch those profiles
+
+  NOTE:
+    - Elevation is controlled by running Windows Terminal as Administrator.
+    - After shortcuts are created, you can set them to "Run as administrator"
+      via the shortcut properties (one-time manual step).
 #>
 
 [CmdletBinding()]
@@ -19,19 +21,36 @@ $ErrorActionPreference = 'Stop'
 
 Write-Host "[Kydras-GodBox] [Enable-TrueAdmin] Start" -ForegroundColor Cyan
 
-# Admin check (defensive, even though Install-GodBox already checked)
-$principal = New-Object Security.Principal.WindowsPrincipal (
-    [Security.Principal.WindowsIdentity]::GetCurrent()
-)
-if (-not $principal.IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)) {
-    Write-Error "[Enable-TrueAdmin] Must be run as Administrator."
-    exit 1
+$ScriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
+$RepoRoot  = Split-Path -Parent $ScriptDir
+
+Write-Host "[Enable-TrueAdmin] ScriptDir: $ScriptDir"
+Write-Host "[Enable-TrueAdmin] RepoRoot : $RepoRoot"
+
+# 1. Locate helpers
+$CreateTerminals = Join-Path $ScriptDir 'Create-Admin-Terminals.ps1'
+$CreateShortcuts = Join-Path $ScriptDir 'Create-DesktopShortcuts.ps1'
+
+if (-not (Test-Path $CreateTerminals)) {
+    Write-Warning "[Enable-TrueAdmin] Create-Admin-Terminals.ps1 not found at: $CreateTerminals"
+} else {
+    Write-Host "[Enable-TrueAdmin] Running Create-Admin-Terminals.ps1 ..." -ForegroundColor Cyan
+    try {
+        & $CreateTerminals -RepoRoot $RepoRoot
+    } catch {
+        Write-Warning "[Enable-TrueAdmin] Create-Admin-Terminals.ps1 failed: $($_.Exception.Message)"
+    }
 }
 
-# For now, just log intentions
-Write-Host "[Enable-TrueAdmin] Phase 1: No changes made." -ForegroundColor Yellow
-Write-Host "[Enable-TrueAdmin] In future phases, this will:" -ForegroundColor Yellow
-Write-Host "  - Create 3 Windows Terminal profiles for full Admin shells" -ForegroundColor Yellow
-Write-Host "  - Optionally create desktop shortcuts launching those profiles" -ForegroundColor Yellow
+if (-not (Test-Path $CreateShortcuts)) {
+    Write-Warning "[Enable-TrueAdmin] Create-DesktopShortcuts.ps1 not found at: $CreateShortcuts"
+} else {
+    Write-Host "[Enable-TrueAdmin] Running Create-DesktopShortcuts.ps1 ..." -ForegroundColor Cyan
+    try {
+        & $CreateShortcuts
+    } catch {
+        Write-Warning "[Enable-TrueAdmin] Create-DesktopShortcuts.ps1 failed: $($_.Exception.Message)"
+    }
+}
 
 Write-Host "[Kydras-GodBox] [Enable-TrueAdmin] End" -ForegroundColor Green
