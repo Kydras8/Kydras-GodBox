@@ -1,3 +1,11 @@
+<!-- Kydras Repo Header -->
+<p align="center">
+  <strong>Kydras Systems Inc.</strong><br/>
+  <em>Nothing is off limits.</em>
+</p>
+
+---
+
 # Kydras-GodBox
 
 **Unified Windows + WSL2 + Kali + AC1900 “God Mode” Dev & Pentest Workstation**
@@ -49,3 +57,4 @@ wireless/   # AC1900 detection, bridging, and wireless helpers
 packaging/  # Zip builder scripts and manifest
 docs/       # Design, architecture, and roadmap
 logs/       # Runtime logs (not all committed)
+
